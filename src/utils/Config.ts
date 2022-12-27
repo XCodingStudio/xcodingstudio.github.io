@@ -1,9 +1,10 @@
-import { BasicSectionType, MainBannerConfigType } from "./types";
+import { BasicSectionType, GallerySectionType, MainBannerConfigType } from "./types";
 
 export class Config {
     private static instance: Config;
     private _MainBannerConfig: MainBannerConfigType | undefined;
     private _FirstGraySection: BasicSectionType | undefined;
+    private _GallerySection: GallerySectionType | undefined;
 
     private constructor() {}
 
@@ -29,5 +30,13 @@ export class Config {
 
     set FirstGraySection(FirstSectionConfig: BasicSectionType | undefined) {
         this._FirstGraySection = FirstSectionConfig;
+    }
+
+    get GallerySection(): GallerySectionType | undefined {
+        return this._GallerySection;
+    }
+
+    set GallerySection(value: GallerySectionType | undefined) {
+        this._GallerySection = value;
     }
 }

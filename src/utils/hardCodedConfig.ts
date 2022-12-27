@@ -1,4 +1,7 @@
-import { BasicSectionType, MainBannerConfigType } from "./types";
+import { BasicSectionType, GallerySectionType, MainBannerConfigType } from "./types";
+import MobileApps from '../Assets/Images/MobileApps.jpg';
+import WebApps from '../Assets/Images/WebApps.jpg';
+import Design from '../Assets/Images/Design.jpg';
 
 export const HardCoded_MainBannerConfig: MainBannerConfigType = {
     title: "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
@@ -12,4 +15,16 @@ export const HardCoded_FirstSectionConfig: BasicSectionType = {
         "electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of" +
         "Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like " +
         "Aldus PageMaker including versions of Lorem Ipsum."
+}
+
+export const HardCoded_GalleryConfig: GallerySectionType = {
+    title_one: "Mobile Apps",
+    content_one: "Lorem Ipsum is simply dummy text of the printing",
+    image_one: `${MobileApps}`,
+    title_two: "Web Apps",
+    content_two: "Lorem Ipsum is simply dummy text of the printing",
+    image_two: `${WebApps}`,
+    title_three: "Design",
+    content_three: "Lorem Ipsum is simply dummy text of the printing",
+    image_three: `${Design}`
 }

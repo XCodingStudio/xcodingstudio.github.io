@@ -2,7 +2,12 @@ import React from 'react';
 import { MainBanner } from "./Components/MainBanner/MainBanner";
 import { GrayTextPolygon } from "./Components/Polygons/GrayTextPolygon";
 import { Config } from "./utils/Config";
-import { HardCoded_FirstSectionConfig, HardCoded_MainBannerConfig } from "./utils/hardCodedConfig";
+import {
+    HardCoded_FirstSectionConfig,
+    HardCoded_GalleryConfig,
+    HardCoded_MainBannerConfig
+} from "./utils/hardCodedConfig";
+import { Gallery } from "./Components/Gallery/Gallery";
 import './App.css';
 
 function App() {
@@ -10,11 +15,13 @@ function App() {
     const config = Config.getInstance();
     config.MainBannerConfig = HardCoded_MainBannerConfig;
     config.FirstGraySection = HardCoded_FirstSectionConfig;
+    config.GallerySection = HardCoded_GalleryConfig;
 
     return (
         <>
-            <MainBanner config={config.MainBannerConfig}/>
-            <GrayTextPolygon config={config.FirstGraySection}/>
+            <MainBanner config={config.MainBannerConfig} />
+            <GrayTextPolygon config={config.FirstGraySection} />
+            <Gallery config={config.GallerySection} />
         </>
     );
 }
