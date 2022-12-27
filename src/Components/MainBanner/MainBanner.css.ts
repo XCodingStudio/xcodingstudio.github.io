@@ -3,6 +3,7 @@ import CityNight from '../../Assets/Images/CityNight.jpg';
 
 export const Container = styled.div`
     background: url(${CityNight});
+    filter: brightness(85%);
     color: #ffffff;
     height: 100vh;
     width: 100%;

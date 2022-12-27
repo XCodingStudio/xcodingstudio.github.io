@@ -2,11 +2,12 @@ import React from 'react';
 import './App.css';
 import { MainBanner } from "./Components/MainBanner/MainBanner";
 import { Config } from "./utils/Config";
+import { HardCoded_MainBannerConfig } from "./utils/hardCodedConfig";
 
 function App() {
 
     const config = Config.getInstance();
-    config.MainBannerConfig = {title: "Lorem Ipsum is simply dummy text of the printing and typesetting industry"};
+    config.MainBannerConfig = HardCoded_MainBannerConfig;
 
     return (
         <>
