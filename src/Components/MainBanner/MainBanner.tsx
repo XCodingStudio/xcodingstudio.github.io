@@ -1,9 +1,15 @@
 import { Container } from "./MainBanner.css";
+import { MainBannerConfigType } from "../../Config";
+import { FC } from "react";
 
-export const MainBanner = () => {
+type MainBannerType = {
+    config: MainBannerConfigType;
+};
+
+export const MainBanner: FC<MainBannerType> = ({ config }) => {
     return (
         <Container>
-            <h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry</h1>
+            <h1>{config.title}</h1>
         </Container>
     )
 }

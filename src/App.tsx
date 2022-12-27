@@ -1,11 +1,17 @@
 import React from 'react';
 import './App.css';
 import { MainBanner } from "./Components/MainBanner/MainBanner";
+import { Config } from "./Config";
 
 function App() {
+
+    const config = Config.getInstance();
+    config.MainBannerConfig = {title: "Lorem Ipsum is simply dummy text of the printing and typesetting industry"};
+
     return (
         <>
-            <MainBanner />
+            <MainBanner config={config.MainBannerConfig}/>
+
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                 when an unknown printer took a galley of type and scrambled it to make a type specimen book.
