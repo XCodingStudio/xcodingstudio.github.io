@@ -20,8 +20,9 @@ function App() {
     return (
         <>
             <MainBanner config={config.MainBannerConfig} />
-            <GrayTextPolygon config={config.FirstGraySection} />
+            <GrayTextPolygon config={config.FirstGraySection} cutDown={true} />
             <Gallery config={config.GallerySection} />
+            <GrayTextPolygon config={config.FirstGraySection} cutDown={false} />
         </>
     );
 }

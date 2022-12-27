@@ -1,7 +1,6 @@
-import { Container } from "./MainBanner.css";
+import { Container, Title } from "./MainBanner.css";
 import { FC } from "react";
 import { MainBannerConfigType } from "../../utils/types";
-import { Title } from "../Polygons/Polygons.css";
 
 type MainBannerType = {
     config: MainBannerConfigType;

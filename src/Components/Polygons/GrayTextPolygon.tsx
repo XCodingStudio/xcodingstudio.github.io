@@ -1,15 +1,16 @@
-import { Content, GrayPolygon, Title } from "./Polygons.css";
+import { Content, GrayPolygon, H1Title } from "./Polygons.css";
 import { BasicSectionType } from "../../utils/types";
 import { FC } from "react";
 
 type GrayTextPolygonType = {
     config: BasicSectionType;
+    cutDown: boolean;
 }
 
-export const GrayTextPolygon: FC<GrayTextPolygonType> = ({ config }) => {
+export const GrayTextPolygon: FC<GrayTextPolygonType> = ({ config, cutDown }) => {
     return (
-        <GrayPolygon>
-            <Title>{config.title}</Title>
+        <GrayPolygon cutDown={cutDown}>
+            <H1Title>{config.title}</H1Title>
             <Content>{config.content}</Content>
         </GrayPolygon>
     );

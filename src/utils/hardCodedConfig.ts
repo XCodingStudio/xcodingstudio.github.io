@@ -4,7 +4,7 @@ import WebApps from '../Assets/Images/WebApps.jpg';
 import Design from '../Assets/Images/Design.jpg';
 
 export const HardCoded_MainBannerConfig: MainBannerConfigType = {
-    title: "Lorem Ipsum is simply dummy text of the printing and typesetting industry"
+    title: "Lorem Ipsum is simply dummy text"
 }
 
 export const HardCoded_FirstSectionConfig: BasicSectionType = {
