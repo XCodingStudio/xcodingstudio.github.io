@@ -9,6 +9,7 @@ import {
 } from "./utils/hardCodedConfig";
 import { Gallery } from "./Components/Gallery/Gallery";
 import './App.css';
+import { Footer } from "./Components/Footer/Footer";
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
             <GrayTextPolygon config={config.FirstGraySection} cutDown={true} />
             <Gallery config={config.GallerySection} />
             <GrayTextPolygon config={config.FirstGraySection} cutDown={false} />
+            <Footer />
         </>
     );
 }

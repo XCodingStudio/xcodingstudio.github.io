@@ -4,6 +4,7 @@ export const GalleryContainer = styled.div`
     display: flex; 
     flex: 1;
     justify-content: center;
+    padding: 5%;
 `;
 
 export const ImageContainer = styled.div`
@@ -14,6 +15,7 @@ export const ImageContainer = styled.div`
 
 export const Image = styled.img`
   width: 80%;
+  height: 80%;
   filter: grayscale(100%);
   transition: all 0.2s ease;
   

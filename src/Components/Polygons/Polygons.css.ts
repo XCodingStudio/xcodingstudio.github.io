@@ -6,7 +6,7 @@ export const GrayPolygon = styled.div<{ cutDown: boolean }>`
         'polygon(55% 9%, 100% 15%, 100% 100%, 0 100%, 0 0);'
     };
     background: #e0e0e0;
-    padding: 4%;
+    padding: 8%;
     text-align: center;
 `;
 
