@@ -1,6 +1,4 @@
-export type MainBannerConfigType = {
-    title: string;
-};
+import { MainBannerConfigType } from "./types";
 
 export class Config {
     private static instance: Config;

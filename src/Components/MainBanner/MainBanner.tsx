@@ -1,6 +1,6 @@
 import { Container } from "./MainBanner.css";
-import { MainBannerConfigType } from "../../Config";
 import { FC } from "react";
+import { MainBannerConfigType } from "../../utils/types";
 
 type MainBannerType = {
     config: MainBannerConfigType;

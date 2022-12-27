@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { MainBanner } from "./Components/MainBanner/MainBanner";
-import { Config } from "./Config";
+import { Config } from "./utils/Config";
 
 function App() {
 
