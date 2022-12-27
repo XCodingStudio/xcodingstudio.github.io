@@ -1,4 +1,4 @@
-import { Content, GrayPolygon } from "./Polygons.css";
+import { Content, GrayPolygon, Title } from "./Polygons.css";
 import { BasicSectionType } from "../../utils/types";
 import { FC } from "react";
 
@@ -9,7 +9,7 @@ type GrayTextPolygonType = {
 export const GrayTextPolygon: FC<GrayTextPolygonType> = ({ config }) => {
     return (
         <GrayPolygon>
-            <h1>{config.title}</h1>
+            <Title>{config.title}</Title>
             <Content>{config.content}</Content>
         </GrayPolygon>
     );

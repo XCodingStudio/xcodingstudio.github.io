@@ -7,6 +7,8 @@ export const GrayPolygon = styled.div`
   text-align: center;
 `;
 
+export const Title = styled.h1``;
+
 export const Content = styled.div`
   padding: 2%;
 `;
