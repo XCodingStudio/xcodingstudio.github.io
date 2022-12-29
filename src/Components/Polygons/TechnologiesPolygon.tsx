@@ -32,6 +32,9 @@ export const TechnologiesPolygon: FC<WhiteTextPolygonType> = ({ config }) => {
                 <IconWrapper>
                     <Icon src={config.djangoIcon} alt={config.djangoIcon} />
                 </IconWrapper>
+                <IconWrapper>
+                    <Icon src={config.azureIcon} alt={config.azureIcon} />
+                </IconWrapper>
             </FlexWrapper>
         </WhitePolygon>
     )

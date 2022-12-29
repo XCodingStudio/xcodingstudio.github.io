@@ -6,6 +6,7 @@ export const Footer = () => {
     return (
         <FooterContainer >
             <Logo src={XCodingStudioLogo} alt={XCodingStudioLogo} />
+            <p>Copyright XCodingStudio. All rights reserved</p>
             <SocialMedia>
                 <Icon src={icons.facebookIcon} alt={icons.facebookIcon} />
                 <Icon src={icons.instagramIcon} alt={icons.instagramIcon} />

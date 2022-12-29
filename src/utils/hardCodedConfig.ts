@@ -35,5 +35,6 @@ export const HardCoded_TechnologiesSectionConfig: TechnologiesSectionType = {
     javascriptIcon: `${icons.javascriptIcon}`,
     pythonIcon: `${icons.pythonIcon}`,
     reactIcon: `${icons.reactIcon}`,
-    djangoIcon: `${icons.djangoIcon}`
+    djangoIcon: `${icons.djangoIcon}`,
+    azureIcon: `${icons.azureIcon}`
 }

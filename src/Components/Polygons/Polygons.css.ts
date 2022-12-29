@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { isSafari } from "../../utils/browsers";
 
 export const WhitePolygon = styled.div`
     padding: 6%;
@@ -25,7 +24,7 @@ export const Content = styled.div`
 
 export const FlexWrapper = styled.div`
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 `;
 
 export const IconWrapper = styled.div`
@@ -33,20 +32,20 @@ export const IconWrapper = styled.div`
 `;
 
 export const PythonIcon = styled.img`
-    width: 40%;
+    width: 6rem;
     filter: invert(44%) sepia(26%) saturate(984%) hue-rotate(164deg) brightness(102%) contrast(87%);
 `;
 
 export const JavascriptIcon = styled.img`
-    width: 40%;
+    width: 6rem;
     filter: invert(81%) sepia(27%) saturate(945%) hue-rotate(4deg) brightness(107%) contrast(88%);
 `;
 
 export const ReactIcon = styled.img`
-    width: 40%;
+    width: 6rem;
     filter: invert(73%) sepia(59%) saturate(734%) hue-rotate(166deg) brightness(103%) contrast(103%);
 `;
 
 export const Icon = styled.img`
-    width: ${isSafari ? 40 : 25}%;
+    width: 6rem;
 `;

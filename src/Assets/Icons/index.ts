@@ -5,6 +5,8 @@ import djangoIcon from './django.webp';
 import facebookIcon from './facebook.svg';
 import instagramIcon from './instagram.svg';
 import linkedinIcon from './linkedin.svg';
+import copyrightIcon from './copyright.svg';
+import azureIcon from './azure.webp';
 
 export const icons = {
     javascriptIcon,
@@ -14,4 +16,6 @@ export const icons = {
     facebookIcon,
     instagramIcon,
     linkedinIcon,
+    copyrightIcon,
+    azureIcon,
 }

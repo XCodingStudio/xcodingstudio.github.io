@@ -13,6 +13,7 @@ export type TechnologiesSectionType = {
     javascriptIcon: string;
     reactIcon: string;
     djangoIcon: string;
+    azureIcon: string;
 };
 
 export type GallerySectionType = {
