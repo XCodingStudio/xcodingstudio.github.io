@@ -15,7 +15,7 @@ type WhiteTextPolygonType = {
     config: TechnologiesSectionType
 };
 
-export const WhiteTextPolygon: FC<WhiteTextPolygonType> = ({ config }) => {
+export const TechnologiesPolygon: FC<WhiteTextPolygonType> = ({ config }) => {
     return (
         <WhitePolygon>
             <H1Title>{config.title}</H1Title>

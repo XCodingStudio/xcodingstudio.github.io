@@ -1,6 +1,6 @@
 import React from 'react';
 import { MainBanner } from "./Components/MainBanner/MainBanner";
-import { GrayTextPolygon } from "./Components/Polygons/GrayTextPolygon";
+import { CutGrayTextPolygon } from "./Components/Polygons/CutGrayTextPolygon";
 import { Config } from "./utils/Config";
 import {
     HardCoded_FirstSectionConfig,
@@ -10,7 +10,7 @@ import {
 import { Gallery } from "./Components/Gallery/Gallery";
 import './App.css';
 import { Footer } from "./Components/Footer/Footer";
-import { WhiteTextPolygon } from "./Components/Polygons/WhiteTextPolygon";
+import { TechnologiesPolygon } from "./Components/Polygons/TechnologiesPolygon";
 
 function App() {
 
@@ -23,10 +23,10 @@ function App() {
     return (
         <>
             <MainBanner config={config.MainBannerConfig} />
-            <GrayTextPolygon config={config.FirstGraySection} cutDown={true} />
+            <CutGrayTextPolygon config={config.FirstGraySection} cutDown={true} />
             <Gallery config={config.GallerySection} />
-            <GrayTextPolygon config={config.FirstGraySection} cutDown={false} />
-            <WhiteTextPolygon config={config.TechnologiesSection} />
+            <CutGrayTextPolygon config={config.FirstGraySection} cutDown={false} />
+            <TechnologiesPolygon config={config.TechnologiesSection} />
             <Footer />
         </>
     );

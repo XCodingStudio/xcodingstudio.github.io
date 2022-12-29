@@ -7,7 +7,7 @@ type GrayTextPolygonType = {
     cutDown: boolean;
 }
 
-export const GrayTextPolygon: FC<GrayTextPolygonType> = ({ config, cutDown }) => {
+export const CutGrayTextPolygon: FC<GrayTextPolygonType> = ({ config, cutDown }) => {
     return (
         <GrayPolygon cutDown={cutDown}>
             <H1Title>{config.title}</H1Title>

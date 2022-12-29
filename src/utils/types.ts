@@ -5,7 +5,7 @@ export type MainBannerConfigType = {
 export type BasicSectionType = {
     title: string;
     content: string;
-}
+};
 
 export type TechnologiesSectionType = {
     title: string;
@@ -13,7 +13,7 @@ export type TechnologiesSectionType = {
     javascriptIcon: string;
     reactIcon: string;
     djangoIcon: string;
-}
+};
 
 export type GallerySectionType = {
     title_one: string;
@@ -25,4 +25,4 @@ export type GallerySectionType = {
     title_three: string;
     content_three: string;
     image_three: string;
-}
+};
