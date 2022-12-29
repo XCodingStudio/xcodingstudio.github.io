@@ -17,6 +17,7 @@ export class Config {
     }
 
     get MainBannerConfig(): MainBannerConfigType {
+        // eslint-disable-next-line @typescript-eslint/consistent-type-assertions
         return <MainBannerConfigType>this._MainBannerConfig;
     }
 
