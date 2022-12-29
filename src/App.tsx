@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { MainBanner } from "./Components/MainBanner/MainBanner";
 import { CutGrayTextPolygon } from "./Components/Polygons/CutGrayTextPolygon";
 import { Config } from "./utils/Config";
@@ -14,6 +14,8 @@ import { TechnologiesPolygon } from "./Components/Polygons/TechnologiesPolygon";
 
 function App() {
 
+    const firstSectionReference = useRef(null);
+
     const config = Config.getInstance();
     config.MainBannerConfig = HardCoded_MainBannerConfig;
     config.FirstGraySection = HardCoded_FirstSectionConfig;
@@ -22,8 +24,10 @@ function App() {
 
     return (
         <>
-            <MainBanner config={config.MainBannerConfig} />
-            <CutGrayTextPolygon config={config.FirstGraySection} cutDown={true} />
+            <MainBanner config={config.MainBannerConfig} scrollReference={firstSectionReference} />
+            <div ref={firstSectionReference}>
+                <CutGrayTextPolygon config={config.FirstGraySection} cutDown={true} />
+            </div>
             <Gallery config={config.GallerySection} />
             <CutGrayTextPolygon config={config.FirstGraySection} cutDown={false} />
             <TechnologiesPolygon config={config.TechnologiesSection} />
