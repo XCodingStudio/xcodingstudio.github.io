@@ -5,11 +5,12 @@ import { Config } from "./utils/Config";
 import {
     HardCoded_FirstSectionConfig,
     HardCoded_GalleryConfig,
-    HardCoded_MainBannerConfig
+    HardCoded_MainBannerConfig, HardCoded_TechnologiesSectionConfig
 } from "./utils/hardCodedConfig";
 import { Gallery } from "./Components/Gallery/Gallery";
 import './App.css';
 import { Footer } from "./Components/Footer/Footer";
+import { WhiteTextPolygon } from "./Components/Polygons/WhiteTextPolygon";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
     config.MainBannerConfig = HardCoded_MainBannerConfig;
     config.FirstGraySection = HardCoded_FirstSectionConfig;
     config.GallerySection = HardCoded_GalleryConfig;
+    config.TechnologiesSection = HardCoded_TechnologiesSectionConfig;
 
     return (
         <>
@@ -24,6 +26,7 @@ function App() {
             <GrayTextPolygon config={config.FirstGraySection} cutDown={true} />
             <Gallery config={config.GallerySection} />
             <GrayTextPolygon config={config.FirstGraySection} cutDown={false} />
+            <WhiteTextPolygon config={config.TechnologiesSection} />
             <Footer />
         </>
     );

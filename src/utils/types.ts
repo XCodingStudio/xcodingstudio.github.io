@@ -7,6 +7,14 @@ export type BasicSectionType = {
     content: string;
 }
 
+export type TechnologiesSectionType = {
+    title: string;
+    pythonIcon: string;
+    javascriptIcon: string;
+    reactIcon: string;
+    djangoIcon: string;
+}
+
 export type GallerySectionType = {
     title_one: string;
     content_one: string;

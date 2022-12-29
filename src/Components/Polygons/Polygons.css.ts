@@ -1,4 +1,10 @@
 import styled from "styled-components";
+import { isSafari } from "../../utils/browsers";
+
+export const WhitePolygon = styled.div`
+    padding: 4%;
+    text-align: center;
+`;
 
 export const GrayPolygon = styled.div<{ cutDown: boolean }>`
     clip-path: ${(props) => props.cutDown ? 
@@ -15,4 +21,32 @@ export const H1Title = styled.h1``;
 export const Content = styled.div`
     padding: 2%;
     line-height: 1.6rem;
+`;
+
+export const FlexWrapper = styled.div`
+    display: flex;
+    justify-content: center;
+`;
+
+export const IconWrapper = styled.div`
+    padding-top: 4%;
+`;
+
+export const PythonIcon = styled.img`
+    width: 40%;
+    filter: invert(44%) sepia(26%) saturate(984%) hue-rotate(164deg) brightness(102%) contrast(87%);
+`;
+
+export const JavascriptIcon = styled.img`
+    width: 40%;
+    filter: invert(81%) sepia(27%) saturate(945%) hue-rotate(4deg) brightness(107%) contrast(88%);
+`;
+
+export const ReactIcon = styled.img`
+    width: 40%;
+    filter: invert(73%) sepia(59%) saturate(734%) hue-rotate(166deg) brightness(103%) contrast(103%);
+`;
+
+export const Icon = styled.img`
+    width: ${isSafari ? 40 : 25}%;
 `;

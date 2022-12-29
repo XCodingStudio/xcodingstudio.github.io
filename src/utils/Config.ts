@@ -1,10 +1,11 @@
-import { BasicSectionType, GallerySectionType, MainBannerConfigType } from "./types";
+import { BasicSectionType, GallerySectionType, MainBannerConfigType, TechnologiesSectionType } from "./types";
 
 export class Config {
     private static instance: Config;
-    private _MainBannerConfig: MainBannerConfigType | undefined;
-    private _FirstGraySection: BasicSectionType | undefined;
-    private _GallerySection: GallerySectionType | undefined;
+    private _MainBannerConfig!: MainBannerConfigType;
+    private _FirstGraySection!: BasicSectionType;
+    private _GallerySection!: GallerySectionType;
+    private _TechnologiesSection!: TechnologiesSectionType;
 
     private constructor() {}
 
@@ -25,19 +26,27 @@ export class Config {
         this._MainBannerConfig = mainBannerConfig;
     }
 
-    get FirstGraySection(): BasicSectionType | undefined {
+    get FirstGraySection(): BasicSectionType {
         return this._FirstGraySection;
     }
 
-    set FirstGraySection(FirstSectionConfig: BasicSectionType | undefined) {
+    set FirstGraySection(FirstSectionConfig: BasicSectionType) {
         this._FirstGraySection = FirstSectionConfig;
     }
 
-    get GallerySection(): GallerySectionType | undefined {
+    get GallerySection(): GallerySectionType {
         return this._GallerySection;
     }
 
-    set GallerySection(value: GallerySectionType | undefined) {
+    set GallerySection(value: GallerySectionType) {
         this._GallerySection = value;
+    }
+
+    get TechnologiesSection(): TechnologiesSectionType {
+        return this._TechnologiesSection;
+    }
+
+    set TechnologiesSection(value: TechnologiesSectionType) {
+        this._TechnologiesSection = value;
     }
 }

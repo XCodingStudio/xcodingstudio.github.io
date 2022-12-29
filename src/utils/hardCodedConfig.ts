@@ -1,7 +1,8 @@
-import { BasicSectionType, GallerySectionType, MainBannerConfigType } from "./types";
+import { BasicSectionType, GallerySectionType, MainBannerConfigType, TechnologiesSectionType } from "./types";
 import MobileApps from '../Assets/Images/MobileApps.jpg';
 import WebApps from '../Assets/Images/WebApps.jpg';
 import Design from '../Assets/Images/Design.jpg';
+import { icons } from "../Assets/Icons";
 
 export const HardCoded_MainBannerConfig: MainBannerConfigType = {
     title: "Digital Products and Services for You"
@@ -27,4 +28,12 @@ export const HardCoded_GalleryConfig: GallerySectionType = {
     title_three: "Design",
     content_three: "Lorem Ipsum is simply dummy text of the printing",
     image_three: `${Design}`
+}
+
+export const HardCoded_TechnologiesSectionConfig: TechnologiesSectionType = {
+    title: "The technologies we are using",
+    javascriptIcon: `${icons.javascriptIcon}`,
+    pythonIcon: `${icons.pythonIcon}`,
+    reactIcon: `${icons.reactIcon}`,
+    djangoIcon: `${icons.djangoIcon}`
 }
