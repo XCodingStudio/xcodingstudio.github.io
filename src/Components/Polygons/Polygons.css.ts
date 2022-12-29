@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { isSafari } from "../../utils/browsers";
 
 export const WhitePolygon = styled.div`
-    padding: 4%;
+    padding: 6%;
     text-align: center;
 `;
 
